@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Подбор породы собаки</title>
+    <link rel="stylesheet" href="static/style/style.css">
+
+    
+</head>
+<body>
+    <div class="main">
+        <script src = "test.js"> </script>
+        <div class="navbar">
+            <a href="/">На главную</a>
+            <a href="test.html">Тест</a>
+            <a href="info.html">Справочник по породам</a>
+            
+        </div>
+
+        <div class="header">
+            <h1>Подбери идеальную породу собаки!</h1>
+        </div>
+
+        <title>Тест на выбор породы собаки</title>
+        
+        
+        <div id="question1" class="question active">
+            <p>1. Какой размер собаки вам подходит?</p>
+            
+                <button class="testbutton" onclick="nextQuestion('small')">Маленькая (до 10 кг)</button>
+                <button class="testbutton" onclick="nextQuestion('medium')">Средняя (от 10 до 25 кг)</button>
+                <button class="testbutton" onclick="nextQuestion('large')">Большая (свыше 25 кг)</button>
+            
+        </div>
+
+        <div id="question2" class="question">
+            <p>2. Насколько вы активный?</p>
+            <button class="testbutton" onclick="nextQuestion('low')">Не люблю много двигаться</button>
+            <button class="testbutton" onclick="nextQuestion('mediumActivity')">Могу иногда прогуляться</button>
+            <button class="testbutton" onclick="nextQuestion('high')">Я очень активный!</button>
+        </div>
+
+        <div id="question3" class="question">
+            <p>3. Насколько пушистую собаку вы хотите?</p>
+            <button class="testbutton" onclick="nextQuestion('long')">Мечтаю о длинношёрстной собаке</button>
+            <button class="testbutton" onclick="nextQuestion('short')">Не хочу, чтобы было много шерсти</button>
+            <button class="testbutton" onclick="nextQuestion('fluffy')">Люблю мягких и пушистых собачек</button>
+        </div>
+
+        <div id="question4" class="question">
+            <p>4. У вас большая семья?</p>
+            <button class="testbutton" onclick="nextQuestion('single')">Живу один/с парой</button>
+            <button class="testbutton" onclick="nextQuestion('withKids')">Семья с детьми</button>
+            <button class="testbutton" onclick="nextQuestion('otherPets')">У меня есть другие питомцы</button>
+        </div>
+
+        <div id="question5" class="question">
+            <p>5. Сколько времени вы готовы уделять собаке?</p>
+            <button class="testbutton" onclick="nextQuestion('littleTime')">Менее часа в день</button>
+            <button class="testbutton" onclick="nextQuestion('moderateTime')">Пару часов в день</button>
+            <button class="testbutton" onclick="nextQuestion('aLotOfTime')">Готов посвящать ей всё своё время!</button>
+        </div>
+
+        <div id="question6" class="question">
+            <p>6. Нужна ли вам собака для охраны?</p>
+            <button class="testbutton" onclick="nextQuestion('noProtection')">Нет</button>
+            <button class="testbutton" onclick="nextQuestion('someProtection')">Иногда защита не помешала бы</button>
+            <button class="testbutton" onclick="nextQuestion('strongProtection')">Да</button>
+        </div>
+
+        <div id="question7" class="question">
+            <p>7. Какой климат у вас в регионе?</p>
+            <button class="testbutton" onclick="nextQuestion('cold')">Холодный</button>
+            <button class="testbutton" onclick="nextQuestion('moderate')">Умеренный</button>
+            <button class="testbutton" onclick="nextQuestion('warm')">Теплый</button>
+        </div>
+
+        <div id="question8" class="question">
+            <p>8. Есть ли у вас опыт дрессировки?</p>
+            <button class="testbutton" onclick="nextQuestion('noExperience')">Нет</button>
+            <button class="testbutton" onclick="nextQuestion('willingToTrain')">Есть небольшой опыт</button>
+            <button class="testbutton" onclick="nextQuestion('seriousTraining')">У меня богатый опыт дрессировки</button>
+        </div>
+
+        <div id="question9" class="question">
+            <p>9. Готовы ли вы ухаживать за шерстью собаки?</p>
+            <button class="testbutton" onclick="nextQuestion('minimum')">Нет</button>
+            <button class="testbutton" onclick="nextQuestion('mediumCare')">Могу иногда расчёсывать питомца</button>
+            <button class="testbutton" onclick="nextQuestion('maximum')">Есть время и деньги на походы к грумеру</button>
+        </div>
+
+        <div id="question10" class="question">
+            <p>10. Какой характер собаки будет для вас идеальным?</p>
+            <button class="testbutton" onclick="nextQuestion('calm')">Спокойная и дружелюбная</button>
+            <button class="testbutton" onclick="nextQuestion('active')">Активная и игривая</button>
+            <button class="testbutton" onclick="nextQuestion('protective')">Верная и смелая</button>
+        </div>
+
+        <div id="result" class="question">
+            <div class="results">
+                <h2>Тест завершён!</h2>
+                <p id="resultText"></p>
+                <button class="testbutton" onclick="showResult()">Ваш результат</button>
+                <button class="testbutton" onclick="restartTest()">Пройти тест снова</button>
+                <img src="static/images/breeds.jpg" alt="Картинка не найдена">
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
+
